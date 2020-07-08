@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">bai4</string>
+    <string name="txt1">Họ Tên</string>
+    <string name="txt2">Năm Sinh</string>
+    <string name="Name">Input Name</string>
+    <string name="Year">Input Year</string>
+    <string name="btnCal">Tính Tuổi</string>
+    <string name="notice" />
+    <string name="Notice">Thông báo</string>
+</resources>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/edt_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="Nhập Tên" />
+
+    <EditText
+        android:inputType="number"
+        android:maxLength="11"
+        android:id="@+id/edt_sdt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="Nhập Số điện thoại" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Giới tính!"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/radio_gr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbtnMale"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="Nam" />
+
+        <RadioButton
+            android:id="@+id/rbtnFemale"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Nữ" />
+    </RadioGroup>
+
+    <RadioGroup
+
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_them"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill_vertical"
+            android:layout_marginBottom="16dp"
+            android:background="@color/colorAccent"
+            android:onClick="addContact"
+            android:padding="@dimen/padding_8dp"
+            android:layout_marginLeft="20dp"
+            android:text="Thêm"
+            android:textColor="@color/white" />
+
+        <Button
+
+            android:onClick="fixContact"
+            android:id="@+id/btn_sua"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_gravity="fill_vertical"
+            android:layout_marginBottom="16dp"
+            android:background="@color/colorAccent"
+            android:padding="@dimen/padding_8dp"
+            android:text="Sửa"
+            android:textColor="@color/white" />
+        <Button
+            android:onClick="removeContact"
+            android:id="@+id/btnXoa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_gravity="fill_vertical"
+            android:layout_marginBottom="16dp"
+            android:background="@color/colorAccent"
+            android:padding="@dimen/padding_8dp"
+            android:text="Xóa"
+
+            android:textColor="@color/white" />
+    </RadioGroup>
+
+    <ListView
+        android:listSelector="@drawable/list_selector"
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</LinearLayout>

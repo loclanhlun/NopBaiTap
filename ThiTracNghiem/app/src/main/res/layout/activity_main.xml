@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_margin="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:textSize="36sp"
+
+        android:text="Bài Thi"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"/>
+    <TextView
+        android:textSize="20sp"
+        android:text="Câu 1: Thành phố Tuy Hòa thuộc tỉnh nào của nước ta?"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <RadioGroup
+        android:id="@+id/radio_gr1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+
+            android:id="@+id/rab_a1"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A: Nam Định"/>
+        <RadioButton
+            android:id="@+id/rab_b1"
+            android:text="B: Yên Bái"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <RadioButton
+
+            android:id="@+id/rab_c1"
+            android:text="C: Phú Yên"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <RadioButton
+            android:id="@+id/rab_d1"
+            android:text="D: Bình Định"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    </RadioGroup>
+    <TextView
+        android:layout_marginTop="30dp"
+        android:textSize="20sp"
+        android:text="Câu 2: Thủ đô Paris thuộc nước nào?"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <RadioGroup
+        android:id="@+id/radio_gr2"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rab_a2"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A: Anh"/>
+        <RadioButton
+            android:id="@+id/rab_b2"
+            android:text="B: Việt Nam"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <RadioButton
+
+            android:id="@+id/rab_c2"
+            android:text="C: Pháp"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <RadioButton
+            android:id="@+id/rab_d2"
+            android:text="D: Australia"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    </RadioGroup>
+    <TextView
+        android:layout_marginTop="30dp"
+        android:textSize="20sp"
+        android:text="Câu 3: Thủ đô nước Mỹ tên gì?"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <RadioGroup
+        android:id="@+id/radio_gr3"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rab_a3"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A:Paris"/>
+        <RadioButton
+            android:id="@+id/rab_b3"
+            android:text="B: LonDon"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <RadioButton
+
+            android:id="@+id/rab_c3"
+            android:text="C: Washington"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <RadioButton
+            android:id="@+id/rab_d3"
+            android:text="D: Viêng Chăng"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    </RadioGroup>
+    <RadioGroup
+        android:id="@+id/radio_gr3"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:onClick="Ketqua"
+            android:id="@+id/btn_ketqua"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Kết quả" />
+        <Button
+            android:onClick="lamlai"
+            android:id="@+id/btn_lamlai"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Làm lại" />
+
+    </RadioGroup>
+
+
+
+
+</LinearLayout>
